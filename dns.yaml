@@ -1,0 +1,34 @@
+apiVersion: delivery.cafebazaar.cloud/v1beta1
+kind: DomainZone
+metadata:
+  annotations:
+    delivery.sotoon.ir/creation-timestamp: "2024-01-17T11:18:22Z"
+  labels:
+    argocd.argoproj.io/instance: ynck.ir-sotoon-cdns
+    dns.ravh.ir/origin: ynck.ir
+    dns.ravh.ir/wsid: 034769e4-3225-4120-932f-81c572cf503c
+    reconcile-request: "1705614209119"
+  name: ynck.ir
+  namespace: yektanet
+spec:
+  NSDomain: 5a31d2abbe369cf4c4ee453a0ca5acea.ns.cafebazaar.cloud
+  email: yn360.sre@gmail.com
+  nameservers:
+  - chromium.ns.sotoon.cloud
+  - radium.ns.sotoon.cloud
+  nameserversV4:
+  - y.ns.sotoon53.com
+  - ns.sotoon53.com
+  nsNameserver: yektanet.ns.sotoon53.com
+  origin: ynck.ir
+  records:
+    '@':
+    - ALIAS: 5a31d2abbe369cf4c4ee453a0ca5acea.cdn.edge.sotoon.ir
+      ttl: 300
+      type: ALIAS
+      weight: 1
+    - TXT: 5a31d2abbe369cf4c4ee453a0ca5acea.cdn.edge.sotoon.ir
+      ttl: 300
+      type: TXT
+      weight: 1
+  wsid: 034769e4-3225-4120-932f-81c572cf503c
